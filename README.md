@@ -9,6 +9,7 @@ The initial idea is to create:
 
 * a home page with general information, a nice background picture and some smaller pictures that give a good impression
 * a form to contact Elevador
+* deploying the website with Heroku (domainname elevador.es)
 
 If the placeholder project is successful, the idea is to create the following pages:
 
