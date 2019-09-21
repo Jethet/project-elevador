@@ -2,13 +2,14 @@
 This project aims to create a temporary website for Elevador.
 
 ![Elevador logo](https://github.com/Jethet/elevador_project/blob/master/placeholder/static/images/Elevador%20logo%20%2B%20Meetup%20link%20jpeg.jpg)
+
 Elevador is an initiative in Barcelona that offers an open, safe space to people who want to organize events, small exhibitions, music activities, workshops etc. It is important that people can find Elevador online. Since my skills in building websites are still limited, the goal is to build a 'placeholder' website for now. This temporary website will be replaced by something more advanced in the future.
 
 The initial idea is to create:
 
 * a home page with general information, a nice background picture and some smaller pictures that give a good impression
 * a form to contact Elevador
-* deploying the website with Heroku (domainname elevador.es)
+* deploying the website with Heroku (domainname elevador.es is available)
 
 If the placeholder project is successful, the idea is to create the following pages:
 
