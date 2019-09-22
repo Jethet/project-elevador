@@ -25,21 +25,43 @@
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
     </ul>
-
   </header>
+  <br>
+  <br>
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">Photo 1
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item-active">
+            <img src="..." class="d-block w-100" alt="Picture 1 of Elevador">
+          </div>
+          <div class="carousel-item-active">
+            <img src="..." class="d-block w-100" alt="Picture 2 of Park">
+          </div>
+          <div class="carousel-item-active">
+            <img src="..." class="d-block w-100" alt="Picture 3 of Concert">
+          </div>
+          <div class="carousel-item-active">
+            <img src="..." class="d-block w-100" alt="Picture 4 of Beamer">
+          </div>
         </div>
-        <div class="col-6">
-          Wider column
-        </div>
-        <div class="col">
-          Photo 2
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+    </div>
       <br>
       <div class="row">
         <h1>This will be the home page of the placeholder website</h1>
