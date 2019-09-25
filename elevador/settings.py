@@ -26,7 +26,8 @@ SECRET_KEY = 'hhvzs)(ssp$(+f@ru1%j#*$#(^ed96wtie496&12-mb9$ul@_w'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# ADDED THE FOLLOWING TO GET OUT OF SERVER ERROR:
+SECURE_SSL_REDIRECT = False
 
 # Application definition
 
