@@ -15,3 +15,6 @@ def who(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def codeofconduct(request):
+    return render(request, 'codeofconduct.html')
