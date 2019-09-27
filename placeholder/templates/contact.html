@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Josefin Slab', serif;
-      font-size: 36px;
-    }
+  body {
+    font-family: 'Josefin Slab', serif;
+    font-size: 36px;
+  }
   </style>
 </head>
 
@@ -30,35 +30,39 @@
   <hr>
 </header>
 
-
 <body>
-<h1>Our contact details:</h1>
-opening hours
-hours may differ in case of workshops and events
+  <div class="row">
+    <div class="col-10" style="font-size: 22px;">
+    <h1>Our contact details:</h1>
+    opening hours
+    hours may differ in case of workshops and events
 
-<h2>Contact us!</h2>
+    <h2>Contact us!</h2>
 
-<p>Contact formulier
-  Email en telefoon
-  Kaartje google
-  Link Meetup</p>
-  <div class="col-2">
-    <h4>
-    <ul class="nav flex-column justify-content-end text-right">
-      <li class="nav-item">
-        <a class="nav-link active" href="{% url 'about' %}" target="_blank">About Elevador</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Photo gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'who' %}" target="_blank">Who we are</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
-      </li>
-    </ul>
-    </h4>
-  </div>
-</body>
-</html>
+    <p>Contact formulier
+      Email en telefoon
+      Kaartje google
+      Link Meetup</p>
+      <a href="{% url 'codeofconduct' %}" target="_blank">The Elevador Code of Conduct</a> applies to everyone who uses the space in any way, also when communicating about Elevador and those involved in any way.</p>
+      <div class="col-2">
+        <h4>
+          <ul class="nav flex-column justify-content-end text-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'home' %}" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+    </div>
+  </body>
+  </html>
