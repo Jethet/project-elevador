@@ -39,17 +39,17 @@
         <p>For activities that fit in with the Elevador concept, the rule is that there is no charge if the activity is free and open to everyone. You are invited to make a donation for the use of the space, equipment, drinks, etc. Elevador can host 12 to 15 people. There is foldable furniture that you can use in any way you want: a large table or two smaller tables, chairs in a circle or classroom setting, or a large empty space. A beamer, small fridge and cups and glasses etc. are available. <a href="{% url 'codeofconduct' %}" target="_blank">The Elevador Code of Conduct</a> applies to everyone who uses the space in any way, also when communicating about Elevador and those involved in any way.</p>
         <p>Elevador is on Carrer de Llull 267, opposite the lovely Parc Ghandi, where you can relax among the trees during a break. Elevador is close to metro station Poblenou (L4) and only a short walk from the beach.</p>
       </div>
-      <div class="col-2">
+      <div class="col-3">
         <h4>
         <ul class="nav flex-column justify-content-end text-right">
           <li class="nav-item">
-            <a class="nav-link active" href="{% url 'about' %}" target="_blank">About Elevador</a>
+            <a class="nav-link active" href="{% url 'home' %}" target="_blank">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}" target="_blank">About Elevador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Photo gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'who' %}" target="_blank">Who we are</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
@@ -57,7 +57,20 @@
         </ul>
         </h4>
         <br>
-        <img src="/static/images/audience.jpeg" class="card-img-top" alt="Audience at small concert">
+        <br>
+        <div>
+          <img src="/static/images/audience.jpeg" class="card-img-top rounded" alt="Audience at small concert">
+        </div>
+        <br>
+        <br>
+        <div>
+          <img src="/static/images/donations.jpg" class="card-img-top" alt="Hat with donations">
+        </div>
+        <br>
+        <br>
+        <div>
+          <img src="/static/images/grass.jpg" class="card-img-top rounded" alt="Person relaxing in park">
+        </div>
       </div>
     </div>
 
