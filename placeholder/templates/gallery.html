@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Gallery Elevador</title>
+  <title>Elevador Gallery</title>
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -27,37 +29,30 @@
   </div>
   <hr>
 </header>
-  <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1>Elevador - take your projects and ideas to the next level</h1>
-        <h3><i>An open space for workshops, events and exhibitions</i></h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm">1 of 4</div>
-      <div class="col-sm">2 of 4</div>
-      <div class="col-sm">3 of 4</div>
-      <div class="col-sm">4 of 4</div>
-    </div>
-    <div class="col-2">
+<body>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-3"><img src="/static/images/filmclub1.jpg" class="card-img-top" alt="Workshop filmmaking 1"></div>
+      <div class="col-3"><img src="/static/images/filmclub2.jpg" class="card-img-top" alt="Workshop filmmaking 1"></div>
+      <div class="col-3"><img src="/static/images/donations.jpg" class="card-img-top" alt="Hat with donations"></div>
       <h4>
-      <ul class="nav flex-column justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="{% url 'about' %}">About Elevador</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'gallery' %}">Photo gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'who' %}">Who we are</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+        <ul class="nav flex-column justify-content-end text-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}" target="_blank">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
+          </li>
+        </ul>
       </h4>
     </div>
-
-  </body>
+  </div>
+</div>
+</body>
 </html>
