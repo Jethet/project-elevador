@@ -27,7 +27,7 @@ SECRET_KEY = 'hhvzs)(ssp$(+f@ru1%j#*$#(^ed96wtie496&12-mb9$ul@_w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thawing-refuge-46763.herokuapp.com', 'elevador.es', 'www.elevador.es']
 # ADDED THE FOLLOWING TO GET OUT OF SERVER ERROR:
 SECURE_SSL_REDIRECT = False
 
