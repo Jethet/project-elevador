@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Elevador Home</title>
+  <title>Elevador Gallery</title>
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Josefin Slab', serif;
-      font-size: 21px;
-    }
+  body {
+    font-family: 'Josefin Slab', serif;
+    font-size: 21px;
+  }
   </style>
 </head>
 
@@ -22,7 +22,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img class="img-fluid mx-auto d-block" src="/static/images/elevador_logo.jpg" alt="Elevador logo English and Spanish">
+        <img class="mx-auto d-block" src="/static/images/elevador_logo.jpg" alt="Elevador logo English and Spanish">
       </div>
     </div>
   </div>
@@ -31,127 +31,188 @@
 
 <body>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12">
-        <div id="elevadorpictures" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#elevadorpictures" data-slide-to="0" class="active"></li>
-            <li data-target="#elevadorpictures" data-slide-to="1"></li>
-            <li data-target="#elevadorpictures" data-slide-to="2"></li>
-            <li data-target="#elevadorpictures" data-slide-to="3"></li>
-            <li data-target="#elevadorpictures" data-slide-to="4"></li>
-            <li data-target="#elevadorpictures" data-slide-to="5"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox" style="width:100%; height:450px !important;">
-            <div class="carousel-item active">
-              <img src="/static/images/main_area.jpg" class="d-block w-95" alt="Elevador main area">
-            </div>
-            <div class="carousel-item">
-              <img src="/static/images/mel_merlyn_concert.jpg" class="d-block w-95" alt="Mel Brennan in concert">
-            </div>
-            <div class="carousel-item">
-              <img src="/static/images/exhibition1.jpg" class="d-block w-95" alt="Some paintings at exhibition Martin Ledesma, Catalan painter">
-            </div>
-            <div class="carousel-item">
-              <img src="/static/images/chats.jpeg" class="d-block w-95" alt="Drinks and chats after concert">
-            </div>
-            <div class="carousel-item">
-              <img src="/static/images/beamer.jpg" class="d-block w-95" alt="Beamer projecting logo on white wall">
-            </div>
-            <div class="carousel-item">
-              <img src="/static/images/exhibition2.jpg" class="d-block w-95" alt="Group of people chatting at exhibition Martin Ledesma, Catalan painter">
-            </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub3.jpg" class="card-img-top" alt="Workshop filmmaking 3">
+          <div class="card-body">
+            <p class="card-text">Instructions during the workshop videomaking</p>
           </div>
-          <a class="carousel-control-prev" href="#elevadorpictures" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#elevadorpictures" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub6.jpg" class="card-img-top" alt="Workshop filmmaking 1">
+          <div class="card-body">
+            <p class="card-text">Write the script, act and direct your video</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub2.jpg" class="card-img-top" alt="Workshop filmmaking 2">
+          <div class="card-body">
+            <p class="card-text">Brainstorming during the video workshop</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-2">
+        <h4>
+          <ul class="nav flex-column justify-content-end text-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'home' %}" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </h4>
       </div>
     </div>
   </div>
   <br>
   <div class="container">
-    <div class="row justify-content-center">
-      <h1>Elevador - take your projects and ideas to the next level</h1>
-      <h3><i>An open space for workshops, events and exhibitions</i></h3>
-    </div>
-    <br>
-    <br>
     <div class="row">
-      <div class="col-10" style="font-size: 22px;">
-        <p>Elevador is a place to learn and discover: an open space that offers various activities in the areas of technology, art, literature, creative writing, music etc. It is a place for workshops, presentations and teaching. From time to time, Elevador will also be hosting small concerts and exhibitions.</p>
-        <p>In addition, Elevador wants to offer an opportunity to people who want to start/conduct group activities such as Meetups, but cannot find or afford a suitable space.</p>
-        <p>Elevador aims to be a safe and welcoming place for all. Read the <a href="{% url 'codeofconduct' %}" target="_blank">Elevador Code of Conduct</a> for more detailed information.</p>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub9.jpg" class="card-img-top" alt="Filmmaking group with teacher">
+          <div class="card-body">
+            <p class="card-text">Discussing the acting session</p>
+          </div>
+        </div>
       </div>
-      <br>
-      <br>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub8.jpg" class="card-img-top" alt="Workshop teacher giving instructions 1">
+          <div class="card-body">
+            <p class="card-text">Videomaking, from scriptwriting to shooting</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/filmclub1.jpg" class="card-img-top" alt="Acting session">
+          <div class="card-body">
+            <p class="card-text">Acting and directing your own script</p>
+          </div>
+        </div>
+      </div>
       <div class="col-2">
-        <h4>
-        <ul class="nav flex-column justify-content-end text-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="{% url 'home' %}" target="_blank">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}" target="_blank">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'gallery' %}" target="_blank">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}" target="_blank">Contact</a>
-          </li>
-          <br>
-          <li>
-            <a href="https://www.meetup.com/Elevador-take-your-projects-and-ideas-to-the-next-level/" target="_blank"><img src="/static/images/agenda_meetup.png" alt="Find agenda on Meetup"></a>
-          </li>
-        </ul>
-        </h4>
       </div>
     </div>
-    <br>
+  </div>
+  <br>
+  <div class="container">
     <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem; font-size: 18px;">
-          <img src="/static/images/audience.jpeg" class="card-img-top" alt="Audience at small concert">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/mel_audience.jpeg" class="card-img-top" alt="Mel Brennan chatting with audience">
           <div class="card-body">
-            <p class="card-text">The audience at a concert in Elevador</p>
+            <p class="card-text">Mel Brennan in concert</p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem; font-size: 18px;">
-          <img src="/static/images/filmclub1.jpg" class="card-img-top" alt="Film club workshop">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/mel_merlyn3.jpg" class="card-img-top" alt="Mel Brennan in concert joined by Merlyn Briceno">
           <div class="card-body">
-            <p class="card-text">An Elevador workshop on video making and acting</p>
+            <p class="card-text">Concert Mel Brennan, joined by Merlyn Briceno</p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem; font-size: 18px;">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/mel_chatting.jpeg" class="card-img-top" alt="Mel Brennan in concert">
+          <div class="card-body">
+            <p class="card-text">Mel Brennan and audience talking during break</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
           <img src="/static/images/donations.jpg" class="card-img-top" alt="Hat with donations">
           <div class="card-body">
-            <p class="card-text">Most Elevador activities are donation based</p>
+            <p class="card-text">Many Elevador activities are donation based</p>
           </div>
         </div>
       </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/guitars_bongos.jpg" class="card-img-top" alt="Guitars and bongos">
+          <div class="card-body">
+            <p class="card-text">Guitars and bongos for the Beer & Blues sessions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/working.jpg" class="card-img-top" alt="Person working in main space">
+          <div class="card-body">
+            <p class="card-text">Beamer, whiteboard and blackboard available</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+      </div>
     </div>
-    <br>
-    <br>
   </div>
-
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/front_to_back.jpg" class="card-img-top" alt="Hat with donations">
+          <div class="card-body">
+            <p class="card-text">The Elevador space from front to back (two tables)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/main_area.jpg" class="card-img-top" alt="Elevador main space">
+          <div class="card-body">
+            <p class="card-text">The Elevador main space with one big table</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="font-size: 18px;">
+          <img src="/static/images/fridge_table.jpg" class="card-img-top" alt="Table with fridge">
+          <div class="card-body">
+            <p class="card-text">Refrigerator and table to prepare drinks and food</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
   <footer class="text-muted">
     <div class="container text-center" style="font-size: 16px; line-height:1;">
       <p>The beautiful font used for this website is called 'Josefin Slab' and was designed by <a href="https://fonts.google.com/specimen/Josefin+Slab?selection.family=Josefin+Slab/" target="_blank">Santiago Orozco</a></p>
       <p>©️ Henriette Hettinga {% now "Y" %}</p>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
