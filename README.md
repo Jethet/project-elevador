@@ -9,7 +9,7 @@ The initial idea was to create:
 
 * a home page with general information, a nice background picture and some smaller pictures that give a good impression
 * a form to contact Elevador
-* deploying the website with Heroku (domainname elevador.es is available)
+* deploying the website with Heroku (domainname elevador-bcn.es is available)
 
 The current project includes a bit more:
 
@@ -21,10 +21,9 @@ The current project includes a bit more:
 
 Future ambition is to link the Meetup calendar to the website so that new events that are created in Meetup will automatically show on the website.
 
-The website is built with Python and Django, using HTML and CSS, and some Bootstrap elements. As starting database, Django's dbsqlite3 is be used. 
+The website is built with Python and Django, using HTML and some Bootstrap elements. As initial database, Django's dbsqlite3 is used. The website is deployed on Heroku and is accessible under the elevador-bcn.es URL.
 
 Isues to solve: 
-* The website is deployed on Heroku but not yet under the elevador.es URL. There is a hickup somewhere.
-* Some pictures do not load or load very slow. This has to be improved.
+* Some pictures do not load or load very slow. This has been improved by changing from png to jpg format, but is still not as fast as I would like.
 * The sidebar with navigation almost disappears on smaller screens
 
