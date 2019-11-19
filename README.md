@@ -1,5 +1,5 @@
 # elevador_project
-This project aims to create a temporary website for Elevador.
+The goal of this project was to create a temporary website for Elevador.
 
 ![Elevador logo](https://github.com/Jethet/elevador_project/blob/master/placeholder/static/images/elevador_logo.jpg)
 
@@ -24,6 +24,6 @@ Future ambition is to link the Meetup calendar to the website so that new events
 The website is built with Python and Django, using HTML and some Bootstrap elements. As initial database, Django's dbsqlite3 is used. The website is deployed on Heroku and is accessible under the elevador-bcn.es URL.
 
 Isues to solve: 
-* Some pictures do not load or load very slow. This has been improved by changing from png to jpg format, but is still not as fast as I would like.
-* The sidebar with navigation almost disappears on smaller screens
+* Some pictures do not load or load very slow. This has been improved by changing from png to jpg format, but is still not as fast as I would like. Also, I'd like to have them in the same format.
+* The sidebar with navigation almost disappears on smaller screens. I specifically chose this sidebar to avoid too much of a 'bootstrap' look, and would really like to keep it. 
 
