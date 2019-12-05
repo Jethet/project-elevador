@@ -21,3 +21,6 @@ def codeofconduct(request):
 
 def explaingraveproject(request):
     return render(request, 'explaingraveproject.html')
+
+def explainspanish(request):
+    return render(request, 'explainspanish.html')
