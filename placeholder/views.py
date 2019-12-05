@@ -18,3 +18,6 @@ def contact(request):
 
 def codeofconduct(request):
     return render(request, 'codeofconduct.html')
+
+def explaingraveproject(request):
+    return render(request, 'explaingraveproject.html')

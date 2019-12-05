@@ -28,4 +28,5 @@ urlpatterns = [
     path('who/', views.who, name='who'),
     path('contact/', views.contact, name='contact'),
     path('codeofconduct', views.codeofconduct, name='codeofconduct'),
+    path('explaingraveproject', views.explaingraveproject, name='explaingraveproject'),
 ]
