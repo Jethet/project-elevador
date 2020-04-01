@@ -1,19 +1,18 @@
 # elevador_project
-The goal of this project was to create a temporary website for Elevador.
 
 ![Elevador logo](https://github.com/Jethet/elevador_project/blob/master/placeholder/static/images/elevador_logo.jpg)
 
-Elevador is an initiative in Barcelona that offers an open, safe space to people who want to organize events, small exhibitions, music activities, workshops etc. It is important that people can find Elevador online. Since my skills in building websites are still limited, the goal is to build a 'placeholder' website for now. This temporary website will be replaced by something more advanced in the future.
+The goal of this project was to create a website for Elevador. Elevador is an initiative in Barcelona that offers an open, safe space to people who want to organize events, small exhibitions, music activities, workshops etc. It is important that people can find Elevador online, get information, see activities and get in touch. Since my skills in building websites are still limited, the goal is to build a 'placeholder' website for now. This temporary website will be replaced by something more advanced in the future.
 
 The initial idea was to create:
 
-* a home page with general information, a nice background picture and some smaller pictures that give a good impression
+* a home page with general information, a nice background picture and some smaller pictures to give an impression of Elevador
 * a form to contact Elevador
-* deploying the website with Heroku (domainname elevador-bcn.es is available)
+* deployment of the website with Heroku (domainname elevador-bcn.es was acquired for this purpose)
 
-The current project includes a bit more:
+Once I started the project, it quickly became bigger than just a single page. The current project includes:
 
-* Home page (general description, pictures, sidebar for navigation)
+* ++Home++ page (general description, pictures, sidebar for navigation)
 * About page with more information regarding the concept and practical info on the Elevador space and resources
 * Gallery with photos from past activities
 * Contact page with contact details, directions and map (OpenStreetMaps), opening hours, a 'Contact us! Send email' button with mailto functionality, and links to the Elevador account on Meetup.
