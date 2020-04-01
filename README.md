@@ -25,5 +25,5 @@ The website is built with Python and Django, using HTML, CSS and some Bootstrap 
 Isues to solve:
 * The website is not suitable for mobile use. For a next version of the site, the starting point should be the mobile device.
 * Some pictures do not load or load very slowly. This has been improved by changing from png to jpg format, but is still not as fast as I would like. Also, I'd like to have them in the same format.
-* The sidebar with navigation almost disappears on smaller screens. I specifically chose this lefthand sidebar to avoid too much of a 'bootstrap' look, and would really like to keep it. 
+* The sidebar with navigation almost disappears on smaller screens. I specifically chose this navigation sidebar to avoid too much of a 'bootstrap' look, and would really like to keep it. 
 
