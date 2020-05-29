@@ -1,4 +1,4 @@
-# elevador_project
+# Elevador website
 
 ![Elevador logo](https://github.com/Jethet/elevador_project/blob/master/placeholder/static/images/elevador_logo.jpg)
 
